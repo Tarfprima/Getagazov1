@@ -1,11 +1,7 @@
-
-function addEventListener(){   
-    console.log('Страница загрузилась');
-}  
-
-function word() {}
-    console.log(addEventListener);
-
-function is_even(n){}
-console.log('И как же её запустить???')
-
+window.addEventListener('load', 
+    function () {
+        console.log(1)
+        console.log(2)
+        console.log(3)
+    }
+)
