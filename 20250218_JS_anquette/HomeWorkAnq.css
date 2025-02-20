@@ -1,0 +1,16 @@
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+#cong {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
