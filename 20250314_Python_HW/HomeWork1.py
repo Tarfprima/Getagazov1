@@ -25,7 +25,7 @@ for i in range(all_que):
     else:
         f.write(f"{num1} - {num2} = {user} неверно, {correct}\n")
 
-# Записываем итог в файл
+# Записываем итог в файл ы
 f.write(f"Было задано {all_que} вопросов, {ans} из них верно\n")
 f.close()  
 print("Вопросы и результаты записаны в 'subtraction_test.txt'!")
