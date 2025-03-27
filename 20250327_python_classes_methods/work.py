@@ -29,6 +29,17 @@ class Task:
         else:
             print("Нет, задача ещё не завершена")
         return self.done  # возвращаем значение
+    
+    # 3. Метод, чтобы установить новое описание
+    def set_description(self, new_description):
+        self.description = new_description  # обновляем описание
+        print("Новое описание задачи: ", self.description)
+
+    # 4. Метод, чтобы установить новый дедлайн
+    def set_deadline(self, new_deadline):
+        self.deadline = new_deadline  # новый срок
+        print("Новый дедлайн: ", self.deadline)
+
 
 
 # Проверяем, как работает
@@ -38,3 +49,6 @@ print("Дедлайн: ", task.deadline)
         
 task.complete()          # завершаем задачу
 task.complete_full()           # проверяем, завершена ли
+
+task.set_description("Написать игру")  # меняем описание
+task.set_deadline(datetime(2025, 4, 1))  # новый дедлайн
