@@ -4,7 +4,7 @@ class Car:
         # bфrand - марка машины 
         # year - год выпуска
         # color - цвет
-        # power- мощность
+        # power --- мощность
         self.brand = brand
         self.year = year
         self.color = color
@@ -13,8 +13,9 @@ class Car:
     def __str__(self):
         # ммаагический метод для красивой печати
         # вызывася автоматически при print
-        return 'Марка: ' + self.brand + ' ' + 'Год выпуска: ' + str(self.year) + ' ' + 'Цвет: ' + self.color
+        # длаем строку с переносами строк (\n)
+        return 'Марка: ' + self.brand + '\n' + 'Год выпуска: ' + str(self.year) + '\n' + 'Цвет: ' + self.color
 
 # Проверка 
-car = Car('Лада', 1985, 'малиновый', 200)  # создаём машину
+car = Car('Лада', 1999, 'малиновый', 99)  # создаём машину
 print(car)  # через __str__
