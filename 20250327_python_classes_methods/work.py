@@ -22,5 +22,19 @@ class Task:
         self.done = True  # прост меняем на True
         print("Задача завершена!")
         
-task = Task("Написать программу")
+    # 2. Метод, чтобы проверить, завершена ли задача
+    def complete_full(self):
+        if self.done == True:
+            print("Да, задача уже сделана")
+        else:
+            print("Нет, задача ещё не завершена")
+        return self.done  # возвращаем значение
+
+
+# Проверяем, как работает
+task = Task("Написать программу")  # создаём задачу
+print("Описание: ", task.description)
+print("Дедлайн: ", task.deadline)
+        
 task.complete()          # завершаем задачу
+task.complete_full()           # проверяем, завершена ли
